@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_275sdp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/_10sdp"
+        android:background="@color/white"
+        android:layout_margin="@dimen/_2sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:elevation="@dimen/_5sdp"
+        android:id="@+id/cardview"
+        android:backgroundTint="@color/white"
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_60sdp"
+                android:id="@+id/mainheading"
+                android:padding="@dimen/_5sdp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="@color/black"
+                android:text="Main Heading Displayes here "
+                android:fontFamily="@font/aeonikbold"
+                android:textSize="@dimen/_20ssp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_130sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:maxLines="6"
+                    android:padding="@dimen/_5sdp"
+                    android:id="@+id/content"
+                    android:textSize="@dimen/_15ssp"
+                    android:text="main content goes here"
+                    android:fontFamily="@font/aeonikmedium"
+                    android:textColor="@color/DarkBlue">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_5sdp"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:id="@+id/imageview"
+                    android:src="@drawable/logo"
+                    >
+
+                </ImageView>
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="By Pushpak Bhosale"
+                android:id="@+id/authorr"
+                android:textSize="@dimen/_13ssp"
+                android:fontFamily="@font/magoseregular"
+                android:textStyle="italic"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/MidBlue"
+                >
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/time"
+                android:padding="@dimen/_5sdp"
+                android:textColor="@color/LightBlue"
+                android:text="Published At">
+
+            </TextView>
+
+        </LinearLayout>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
